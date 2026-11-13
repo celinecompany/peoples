@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Redirect only after successful submission.
+            sessionStorage.setItem("fundingApplicationSubmitted", "true");
             window.location.href = new URL(
                 "thank-you.html",
                 window.location.href

@@ -3,12 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <title>Thank You | Peoples Financial Group</title>
     <meta name="description" content="Thank you for submitting a funding enquiry to Peoples Financial Group.">
     <link rel="stylesheet" href="assets/style.css">
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NFM5GDBG"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'GTM-NFM5GDBG'); </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18564626756"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18564626756');
 
-<!-- Event snippet for Submit lead form conversion page --> <script> gtag('event', 'conversion', { 'send_to': 'AW-18564626756/i_r4CJbb8bQdEMTyppRF', 'value': 1.0, 'currency': 'USD' }); </script>
+        if (sessionStorage.getItem('fundingApplicationSubmitted') === 'true') {
+            sessionStorage.removeItem('fundingApplicationSubmitted');
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18564626756/i_r4CJbb8bQdEMTyppRF',
+                'value': 1.0,
+                'currency': 'USD'
+            });
+        }
+    </script>
  
 </head>
 <body>
